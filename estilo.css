@@ -1,11 +1,11 @@
 body{
-    background: blue;
+    background: white;
 }
 
 #dado{
     background: white;
     border-style: solid;
-    border-color: white;
+    border-color: black;
     border-radius: 20px;
     width: 100px;
     height: 100px;
