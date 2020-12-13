@@ -1,0 +1,25 @@
+body{
+    background: blue;
+}
+
+#dado{
+    background: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+td{
+    width: 16px;
+    height: 16px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+}
+#p1, #p2, #p3, #p4, #p5, #p6, #p7{
+    border-radius: 10px;
+    background: white;
+}
