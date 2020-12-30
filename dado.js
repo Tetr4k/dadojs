@@ -3,6 +3,7 @@
 function gera(){
     return Math.floor(Math.random() * 6)+1;
 }
+
 function monta(){
 
     switch(gera()){
