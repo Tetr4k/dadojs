@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../reset.css">
     <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../classes/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="../../classes/principal.css">
+    <link rel="stylesheet" type="text/css" href="../../classes/rodape.css">
     <link rel="stylesheet" type="text/css" href="./dado6Lados.css">
     <body>
-        <main class="dado">
-            <div class="dado__grade">
-                <div id="p1"></div>
-                <div id="p2"></div>
-                <div id="p3"></div>
-                <div id="p4"></div>
-                <div id="p5"></div>
-                <div id="p6"></div>
-                <div id="p7"></div>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">DadoJS</h1>
+            <h2 class="cabecalho__subtitulo">Clique para sortear</h2>
+        </header>
+        <main class="principal">
+            <div id="dado">
+                <div class="dado__grade">
+                    <div id="p1"></div>
+                    <div id="p2"></div>
+                    <div id="p3"></div>
+                    <div id="p4"></div>
+                    <div id="p5"></div>
+                    <div id="p6"></div>
+                    <div id="p7"></div>
+                </div>
             </div>
+            <script src="./dado6Lados.js"></script>
         </main>
-        <script src="dado6Lados.js"></script>
+        <footer class="rodape">
+            <p class="rodape__autor">
+                Autor: <a href="https://github.com/Tetr4k">Gabriel Ribeiro</a>
+            </p>
+        </footer>
     </body>
 </html>
