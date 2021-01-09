@@ -3,4 +3,10 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    margin: 1em;
+}
+
+.principal__dado{
+    height: 512px;
+    width: 512px;
 }

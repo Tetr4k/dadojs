@@ -3,7 +3,16 @@
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: column;
     height: 5em;
     justify-content: center;
+}
+
+.rodape__autor {
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.rodape__autor a, .rodape__autor a:visited{
+    color: white;
+    text-decoration: none;
 }
