@@ -1,104 +1,48 @@
-n1 = 0;
-
-function gera(){
+function geraNumero(){
     return Math.floor(Math.random() * 6)+1;
 }
 
-function geraNaoRepetido(){
-    n2 = Math.floor(Math.random() * 6)+1;
-
-    if(n2==n1){
-        return gera();
+function geraNaoRepetido(valorAtual){
+    novoValor = Math.floor(Math.random() * 6)+1;
+    if(novoValor == valorAtual){
+        return geraNaoRepetido(valorAtual);
     }
     else{
-        n1=n2;
-        return n2;
+        valorAtual = novoValor;
+        return novoValor;
+    }
+}
+
+function montaDado(dado, valor){
+    switch(valor){
+        case 1:
+            dado.className = "dado--1";
+            return 1;
+        case 2:
+            dado.className = "dado--2";
+            return 1;
+        case 3:
+            dado.className = "dado--3";
+            return 1;
+        case 4:
+            dado.className = "dado--4";
+            return 1;
+        case 5:
+            dado.className = "dado--5";
+            return 1;
+        case 6:
+            dado.className = "dado--6";
+            return 1;
+        default:
+            return 0;
     }
 }
 
 const dado = document.getElementById("dado");
-dado.onclick = function (){
-//  switch(gera()){
-    switch(geraNaoRepetido()){
+let numero = geraNumero();
+montaDado(dado, numero);
 
-        case 1:
-
-            document.getElementById("p1").style.backgroundColor = "white";
-            document.getElementById("p2").style.backgroundColor = "white";
-            document.getElementById("p3").style.backgroundColor = "white";
-            document.getElementById("p5").style.backgroundColor = "white";
-            document.getElementById("p6").style.backgroundColor = "white";
-            document.getElementById("p7").style.backgroundColor = "white";
-
-            document.getElementById("p4").style.backgroundColor = "black";
-
-            break;
-
-        case 2:
-
-            document.getElementById("p3").style.backgroundColor = "white";
-            document.getElementById("p1").style.backgroundColor = "white";
-            document.getElementById("p4").style.backgroundColor = "white";
-            document.getElementById("p5").style.backgroundColor = "white";
-            document.getElementById("p7").style.backgroundColor = "white";
-
-            document.getElementById("p6").style.backgroundColor = "black";
-            document.getElementById("p2").style.backgroundColor = "black";
-
-            break;
-
-        case 3:
-
-            document.getElementById("p2").style.backgroundColor = "white";
-            document.getElementById("p5").style.backgroundColor = "white";
-            document.getElementById("p6").style.backgroundColor = "white";
-            document.getElementById("p3").style.backgroundColor = "white";
-
-            document.getElementById("p4").style.backgroundColor = "black";
-            document.getElementById("p7").style.backgroundColor = "black";
-            document.getElementById("p1").style.backgroundColor = "black";
-
-            break;
-
-        case 4:
-
-            document.getElementById("p4").style.backgroundColor = "white";
-            document.getElementById("p3").style.backgroundColor = "white";
-            document.getElementById("p5").style.backgroundColor = "white";
-
-            document.getElementById("p1").style.backgroundColor = "black";
-            document.getElementById("p2").style.backgroundColor = "black";
-            document.getElementById("p6").style.backgroundColor = "black";
-            document.getElementById("p7").style.backgroundColor = "black";
-
-            break;
-
-        case 5:
-
-            document.getElementById("p3").style.backgroundColor = "white";
-            document.getElementById("p5").style.backgroundColor = "white";
-
-            document.getElementById("p1").style.backgroundColor = "black";
-            document.getElementById("p2").style.backgroundColor = "black";
-            document.getElementById("p4").style.backgroundColor = "black";
-            document.getElementById("p6").style.backgroundColor = "black";
-            document.getElementById("p7").style.backgroundColor = "black";
-
-            break;
-
-        case 6:
-
-            document.getElementById("p4").style.backgroundColor = "white";
-
-            document.getElementById("p1").style.backgroundColor = "black";
-            document.getElementById("p2").style.backgroundColor = "black";
-            document.getElementById("p3").style.backgroundColor = "black";
-            document.getElementById("p5").style.backgroundColor = "black";
-            document.getElementById("p6").style.backgroundColor = "black";
-            document.getElementById("p7").style.backgroundColor = "black";
-
-            break;
-
-    }
-
+dado.onclick = function(){
+    numero = geraNaoRepetido(numero);
+    montaDado(this, numero);
 }
