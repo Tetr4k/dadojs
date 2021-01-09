@@ -1,16 +1,11 @@
-#dado{
+.dado__grade{
     background: white;
     border: black 1em solid;
-    border-radius: 25%;
-    margin: 1em;
-    padding: 40px;
-}
-
-#dado__grade{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-    gap: 20px;
+    gap: 30px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    padding: 30px;
 }
 
 #p1 {
@@ -48,7 +43,136 @@
     grid-column: 3 / 3;
 }
 
-#p1, #p2, #p3, #p4, #p5, #p6, #p7{
-    border-radius: 100%;
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, .dado__grade{
+    border-radius: 60px;
+}
+
+/*Numero 6*/
+/*
+---
+* *
+* *
+* *
+---
+*/
+.dado--6 #p1,
+.dado--6 #p2,
+.dado--6 #p3,
+.dado--6 #p5,
+.dado--6 #p6,
+.dado--6 #p7{
     background-color: black;
+}
+
+.dado--6 #p4{
+    background-color: white;
+}
+
+/*Numero 5*/
+/*
+---
+* *
+ *
+* *
+---
+*/
+.dado--5 #p2,
+.dado--5 #p4,
+.dado--5 #p6,
+.dado--5 #p1,
+.dado--5 #p7{
+    background-color: black;
+}
+
+.dado--5 #p3,
+.dado--5 #p5{
+    background-color: white;
+}
+
+/*Numero 4*/
+/*
+---
+* *
+ 
+* *
+---
+*/
+.dado--4 #p1,
+.dado--4 #p2,
+.dado--4 #p6,
+.dado--4 #p7{
+    background-color: black;
+}
+
+.dado--4 #p3,
+.dado--4 #p4,
+.dado--4 #p5{
+    background-color: white;
+}
+
+/*Numero 3*/
+/*
+---
+*
+ *
+  *
+---
+*/
+.dado--3 #p1,
+.dado--3 #p4,
+.dado--3 #p7{
+    background-color: black;
+}
+
+.dado--3 #p2,
+.dado--3 #p3,
+.dado--3 #p5,
+.dado--3 #p6{
+    background-color: white;
+}
+
+/*Numero 2*/
+/*
+---
+  *
+
+*
+---
+*/
+
+.dado--2 #p2,
+.dado--2 #p6{
+    background-color: black;
+}
+
+
+.dado--2 #p1,
+.dado--2 #p3,
+.dado--2 #p4,
+.dado--2 #p5,
+.dado--2 #p7{
+    background-color: white;
+}
+
+/*Numero 1*/
+/*
+---
+  
+ *
+
+---
+*/
+
+.dado--1 #p4{
+    background-color: black;
+}
+
+
+.dado--1 #p1,
+.dado--1 #p2,
+.dado--1 #p3,
+.dado--1 #p5,
+.dado--1 #p6,
+.dado--1 #p7{
+    background-color: white;
 }
