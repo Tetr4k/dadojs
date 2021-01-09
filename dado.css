@@ -1,7 +1,8 @@
 #dado{
-    background: #FEFEFE;
-    border: #010101 1em solid;
+    background: white;
+    border: black 1em solid;
     border-radius: 25%;
+    margin: 1em;
     padding: 20px;
 }
 

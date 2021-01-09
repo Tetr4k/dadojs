@@ -1,11 +1,19 @@
 .cabecalho {
-
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 10em;
+    justify-content: center;
 }
 
 .cabecalho__titulo{
-
+    font-size: 5em;
+    font-family: 'Rubik', sans-serif;
 }
 
 .cabecalho__subtitulo{
-    
+    font-size: 1.5em;
+    font-family: 'Audiowide', cursive;
 }
