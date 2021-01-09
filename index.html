@@ -8,13 +8,25 @@
     <link rel="stylesheet" type="text/css" href="./classes/cabecalho.css">
     <link rel="stylesheet" type="text/css" href="./classes/principal.css">
     <link rel="stylesheet" type="text/css" href="./classes/rodape.css">
+    <link rel="stylesheet" type="text/css" href="./dados/dado6Lados/dado6Lados.css">
     <body>
         <header class="cabecalho">
             <h1 class="cabecalho__titulo">DadoJS</h1>
             <h2 class="cabecalho__subtitulo">Clique para sortear</h2>
         </header>
         <main class="principal">
-            <iframe src="./dados/dado6Lados/dado6Lados.html" class="principal__dado"></iframe>
+            <div id="dado">
+                <div class="dado__grade">
+                    <div id="p1"></div>
+                    <div id="p2"></div>
+                    <div id="p3"></div>
+                    <div id="p4"></div>
+                    <div id="p5"></div>
+                    <div id="p6"></div>
+                    <div id="p7"></div>
+                </div>
+            </div>
+            <script src="dados/dado6Lados/dado6Lados.js"></script>
         </main>
         <footer class="rodape">
             <p class="rodape__autor">
