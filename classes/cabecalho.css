@@ -17,3 +17,26 @@
     font-size: 1.5em;
     font-family: 'Audiowide', cursive;
 }
+
+@media screen and (max-width: 992px){
+    .cabecalho {
+        align-items: center;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 15em;
+        justify-content: center;
+    }
+    
+    .cabecalho__titulo{
+        font-size: 10em;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .cabecalho__subtitulo{
+        font-size: 3em;
+        font-family: 'Audiowide', cursive;
+    }
+    
+}

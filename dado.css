@@ -3,14 +3,14 @@
     border: black 1em solid;
     border-radius: 25%;
     margin: 1em;
-    padding: 20px;
+    padding: 40px;
 }
 
 #dado__grade{
     display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows:  50px 50px 50px;
-    gap: 10px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
 }
 
 #p1 {
