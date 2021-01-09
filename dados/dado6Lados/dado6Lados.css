@@ -48,7 +48,7 @@
     box-shadow: inset 0 0 10px 1px white;
 }
 #p1, #p2, #p3, #p4, #p5, #p6, #p7{
-    border-style: hidden;
+    transition: ease-in-out 100ms;
 }
 
 /*Numero 6*/
