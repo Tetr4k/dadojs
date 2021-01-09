@@ -1,34 +1,28 @@
 <html>
-    <script src="dado.js">
-    </script>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./classes/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="./classes/principal.css">
+    <link rel="stylesheet" type="text/css" href="./classes/rodape.css">
+    <link rel="stylesheet" type="text/css" href="./dado.css">
     <body>
-        <h5>Clique para jogar:</h5>
-        <table onclick="monta()" id="dado">
-            <tr>
-                <td colspan="5"></td>
-                
-                <td rowspan="4"></td>
-            </tr>
-            <tr>
-                <td rowspan="3"></td>
-                <td id="p1"></td>
-                <td></td>
-                <td id="p2"></td>
-            </tr>
-            <tr>
-                <td id="p3"></td>
-                <td id="p4"></td>
-                <td id="p5"></td>
-            </tr>
-            <tr>
-                <td id="p6"></td>
-                <td></td>
-                <td id="p7"></td>
-            </tr>
-            <tr>
-                <td colspan="5"></td>
-            </tr>
-        </table>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">DadoJS</h1>
+            <h2 class="cabecalho__subtitulo">Clique para jogar</h2>
+        </header>
+        <main class="principal">
+            <div id="dado">
+                <div id="dado__grade">
+                    <div id="p1"></div>
+                    <div id="p2"></div>
+                    <div id="p3"></div>
+                    <div id="p4"></div>
+                    <div id="p5"></div>
+                    <div id="p6"></div>
+                    <div id="p7"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape"></footer>
+        <script src="dado.js"></script>
     </body>
 </html>
