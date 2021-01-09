@@ -43,6 +43,12 @@ let numero = geraNumero();
 montaDado(dado, numero);
 
 dado.onclick = function(){
-    numero = geraNaoRepetido(numero);
-    montaDado(this, numero);
+    const elemento = this;
+    let conta = 0;
+    const intervalo = setInterval(function(){
+        conta++;
+        numero = geraNaoRepetido(numero);
+        montaDado(elemento, numero);
+        if (conta == 5) clearInterval(intervalo);
+    }, 300);
 }
