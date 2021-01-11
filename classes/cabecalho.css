@@ -1,11 +1,15 @@
 .cabecalho {
     align-items: center;
     background-color: black;
-    color: white;
     display: flex;
     flex-direction: column;
     height: 10em;
     justify-content: center;
+}
+
+.cabecalho a, .cabecalho a:visited{
+    text-decoration: none;
+    color: white;
 }
 
 .cabecalho__titulo{
@@ -16,6 +20,7 @@
 .cabecalho__subtitulo{
     font-size: 1.5em;
     font-family: 'Audiowide', cursive;
+    color: white;
 }
 
 @media screen and (max-width: 768px){

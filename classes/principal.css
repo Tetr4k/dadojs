@@ -1,8 +1,9 @@
 .principal{
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 1em;
     padding: 1em;
 }
@@ -33,8 +34,23 @@
     padding: 1.2em;
 }
 
-a:visited, a{
+.principal a:visited, .principal a{
     color: white;
     text-decoration: none;
     font-size: 2em;
+}
+
+.principal__texto, .principal__intro{
+    padding: 1em;
+    width: 700px;
+}
+
+.principal__intro{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .principal__texto, .principal__intro{
+        width: 300px;
+    }
 }
