@@ -23,12 +23,6 @@ minCssClasses = () => {
         .pipe(dest("./dist/classes/"));
 }
 
-minCssDados = () => {
-    return src("./src/dados/**/*.css")
-        .pipe(cssmin())
-        .pipe(dest("./dist/dados/"));
-}
-
 buildHTML = () => {
     return src("./src/**/*.html")
         .pipe(htmlreplace(
@@ -47,4 +41,4 @@ buildHTML = () => {
 }
 
 exports.default = sincronizaBrowser;
-exports.build = parallel(minCssClasses, minCssDados, buildHTML);
+exports.build = parallel(minCssClasses, buildHTML);
