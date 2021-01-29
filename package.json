@@ -1,0 +1,28 @@
+{
+  "name": "dadojs",
+  "version": "1.0.0",
+  "description": "DadoJS é um site de dados feitos com javascript.<br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tetr4k/DadoJS.git"
+  },
+  "author": "Gabriel Ribeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tetr4k/DadoJS/issues"
+  },
+  "homepage": "https://github.com/Tetr4k/DadoJS#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-source": "^4.0.0"
+  }
+}
