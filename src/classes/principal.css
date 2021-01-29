@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1em;
     padding: 1em;
 }
 
@@ -47,10 +46,4 @@
 
 .principal__intro{
     font-weight: bold;
-}
-
-@media screen and (max-width: 768px){
-    .principal__texto, .principal__intro{
-        width: 300px;
-    }
 }

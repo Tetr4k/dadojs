@@ -22,13 +22,3 @@
     font-family: 'Audiowide', cursive;
     color: white;
 }
-
-@media screen and (max-width: 768px){
-    .cabecalho {
-        height: 10em;
-    }
-
-    .cabecalho__subtitulo{
-        font-size: 1em;
-    }
-}
