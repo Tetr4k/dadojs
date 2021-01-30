@@ -20,7 +20,7 @@ minCssClasses = () => {
     return src("./src/classes/*.css")
         .pipe(concat("estilos.min.css"))
         .pipe(cssmin())
-        .pipe(dest("./dist/classes/"));
+        .pipe(dest("./dist/"));
 }
 
 buildHTML = () => {
@@ -28,10 +28,10 @@ buildHTML = () => {
         .pipe(htmlreplace(
             {
                 css:{
-                    src: "classes/estilos.min.css"
+                    src: "estilos.min.css"
                 },
                 cssDado:{
-                    src: "../../classes/estilos.min.css"
+                    src: "../../estilos.min.css"
                 }
             }
         ))
