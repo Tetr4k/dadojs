@@ -15,39 +15,39 @@ const Dado = styled.div`
     width: 20em;
 `
 
-const P = styled.div`
+const Bolinha = styled.div`
     background: black;
+    border-radius: 1em;
     box-shadow: inset 0 0 10px 1px white;
+    grid-row: ${ 
+        (props) => {
+            switch(props.numero){
+                case '1':
+                case '2': return '1 / 1';
+                case '3':
+                case '4':
+                case '5': return '2 / 2';
+                case '6':
+                case '7': return '3 / 3';
+                default: return;
+            }
+        }
+    };
+    grid-column: ${ 
+        (props) => {
+            switch(props.numero){
+                case '1':
+                case '3':
+                case '6': return '1 / 1';
+                case '2':
+                case '5':
+                case '7': return '3 / 3';
+                case '4': return '2 / 2';
+                default: return;
+            }
+        }
+    };
     transition: ease-in-out 100ms;
-`
-
-const P1 = styled(P)`
-    grid-row: 1 / 1;
-    grid-column: 1 / 1;
-`
-const P2 = styled(P)`
-    grid-row: 1 / 1;
-    grid-column: 3 / 3;
-`
-const P3 = styled(P)`
-    grid-row: 2 / 2;
-    grid-column: 1 / 1;
-`
-const P4 = styled(P)`
-    grid-row: 2 / 2;
-    grid-column: 2 / 2;
-`
-const P5 = styled(P)`
-    grid-row: 2 / 2;
-    grid-column: 3 / 3;
-`
-const P6 = styled(P)`
-    grid-row: 3 / 3;
-    grid-column: 1 / 1;
-`
-const P7 = styled(P)`
-    grid-row: 3 / 3;
-    grid-column: 3 / 3;
 `
 
 const Dado6 = () => {
@@ -73,14 +73,13 @@ const Dado6 = () => {
 
     return (
         <Dado onClick={() => sorteia()}>
-            {state}
-            <P1/>
-            <P2/>
-            <P3/>
-            <P4/>
-            <P5/>
-            <P6/>
-            <P7/>
+            <Bolinha numero='1'/>
+            <Bolinha numero='2'/>
+            <Bolinha numero='3'/>
+            <Bolinha numero='4'/>
+            <Bolinha numero='5'/>
+            <Bolinha numero='6'/>
+            <Bolinha numero='7'/>
         </Dado>
     );
 }
