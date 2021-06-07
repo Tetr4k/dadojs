@@ -8,5 +8,5 @@ DadoJS é um site de dados feitos com javascript.<br>
 Foi uma ideia que tive para treinar minhas habilidades em Javascript, além de HTML5 e CSS3.
 
 ### Contato:
-[Meu github](https://github.com/Tetr4k)
-[Meu Linkedin](https://www.linkedin.com/in/gabriel-ribeiro-aa8068147/)
+[Github](https://github.com/Tetr4k)
+[Linkedin](https://www.linkedin.com/in/gabriel-ribeiro-aa8068147/)
