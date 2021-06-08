@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Circulo from '../Circulo';
 import { corDadoPadrao } from '../../../Colors'
 
-const tamanho = 2;
+const tamanho = (props) => props.tamanho;
 
 const Dado = styled.div
 `
@@ -15,7 +15,6 @@ const Dado = styled.div
     grid-template-columns: ${tamanho}em ${tamanho}em ${tamanho}em;
     grid-template-rows: ${tamanho}em ${tamanho}em ${tamanho}em;
     height: calc(3 * ${tamanho}em + 2em);
-    margin: auto;
     padding: ${tamanho}em;
     width: calc(3 * ${tamanho}em + 2em);
 `
@@ -47,7 +46,7 @@ const Dado6 = () => {
     }
     
     return (
-        <Dado onClick={() => fazSorteio()}>
+        <Dado tamanho={4} onClick={() => fazSorteio()}>
             {circulos}
         </Dado>
     );

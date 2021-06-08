@@ -46,7 +46,6 @@ const Circulo = styled.div
             default: return 'none';
         }
     }};
-    transition: ease-in-out 1ms;
 `
 
 export default Circulo;
