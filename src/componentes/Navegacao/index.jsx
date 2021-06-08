@@ -15,7 +15,7 @@ const Navegacao = styled.nav
 const retorno = () => {
     return (
         <Navegacao>
-            <Botao to='/dado6'>D6</Botao>
+            <Botao to='/dadojs/dado6'>D6</Botao>
         </Navegacao>
     );
 }
