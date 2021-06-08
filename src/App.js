@@ -15,14 +15,14 @@ function App() {
       <Cabecalho/>
       <Navegacao/>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/dadojs'>
           <Conteudo>
             <CaixaTexto>
               Um APP de dados
             </CaixaTexto>
           </Conteudo>
         </Route>
-        <Route path='/dado6'>
+        <Route path='/dadojs/dado6'>
           <Conteudo>
             <Dado6/>
           </Conteudo>
