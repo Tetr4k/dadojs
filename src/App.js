@@ -1,24 +1,32 @@
-import Dado6 from './components/Dado6'
+import Dado6 from './componentes/dados/Dado6';
+import Cabecalho from './componentes/Cabecalho';
+import Navegacao from './componentes/Navegacao';
+import Conteudo from './componentes/Conteudo';
+import CaixaTexto from './componentes/CaixaTexto';
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <header>
-        aaaaa
-      </header>
+      <Cabecalho/>
+      <Navegacao/>
       <Switch>
         <Route exact path='/'>
-          bbbb
+          <Conteudo>
+            <CaixaTexto>
+              Um APP de dados
+            </CaixaTexto>
+          </Conteudo>
         </Route>
         <Route path='/dado6'>
-          <Dado6/>
+          <Conteudo>
+            <Dado6/>
+          </Conteudo>
         </Route>
-        
       </Switch>
     </Router>  
   );

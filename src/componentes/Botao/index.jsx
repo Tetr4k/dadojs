@@ -6,11 +6,11 @@ const Botao = styled(Link)
 `
     background: ${corFundoPrincipal};
     color: ${corTextoPrincipal};
-    height: 1em;
-    padding: 1em;
+    height: 1rem;
+    padding: 1rem;
     text-decoration: none;
     text-align: center;
-    width: 6em;
+    width: 6rem;
     &:hover{
         background: ${corFundoSecundaria};
     }

@@ -5,7 +5,7 @@ import { corTextoPrincipal } from '../../Colors'
 const Titulo = styled(Link)
 `
   color: ${corTextoPrincipal};
-  font-size: 5em;
+  font-size: 5rem;
   text-decoration: none;
 `
 

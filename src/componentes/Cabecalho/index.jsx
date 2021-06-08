@@ -10,7 +10,7 @@ const Cabecalho = styled.header
   display: flex;
   flex-direction: column;
   font-family: 'Rubik', sans-serif;
-  height: 10em;
+  height: 10rem;
   justify-content: center;
 `
 

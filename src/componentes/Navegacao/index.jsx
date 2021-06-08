@@ -7,8 +7,9 @@ const Navegacao = styled.nav
     border-bottom: white 1px solid;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
 `
 
 const retorno = () => {
