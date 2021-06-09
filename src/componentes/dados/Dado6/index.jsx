@@ -1,55 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Circulo from '../Circulo';
 import { corDadoPadrao } from '../../../Colors'
-
-const tamanho = (props) => props.tamanho;
 
 const Dado = styled.div
 `
     background: ${corDadoPadrao};
     border: ${corDadoPadrao} 1px solid;
-    border-radius: ${tamanho}em;
+    border-radius: 25%;
     display: grid;
-    gap: 1em;
-    grid-template-columns: ${tamanho}em ${tamanho}em ${tamanho}em;
-    grid-template-rows: ${tamanho}em ${tamanho}em ${tamanho}em;
-    height: calc(3 * ${tamanho}em + 2em);
-    padding: ${tamanho}em;
-    width: calc(3 * ${tamanho}em + 2em);
+    gap: 1rem;
+    grid-template-columns: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
+    grid-template-rows: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
+    height: calc(3 * ${(props) => props.tamanho}rem + 2rem);
+    margin: 1rem;
+    padding: ${(props) => props.tamanho}rem;
+    width: calc(3 * ${(props) => props.tamanho}rem + 2rem);
 `
 
-const Dado6 = () => {
-    const [ numero, setNumero ] = useState(6);
-    
-    const gera = () => {
-        const novoValor = Math.floor(Math.random()*6)+1;
-        if(novoValor === numero) {
-            gera();
-            return;
-        }
-        setNumero(novoValor);
-    }
+const Retorno = (props) => {
 
-    const fazSorteio = () => {
-        let cont = 0;
-        const intervalo = setInterval(()=>{
-            cont++;
-            gera();
-            if (cont === 5) clearInterval(intervalo);
-        }, 300);
-    }
+    const circulos = [1, 2, 3, 4, 5, 6, 7];
 
-    let circulos = [];
-    for(let x=1; x<=7; x++){
-        circulos.push(<Circulo posicao={x} key={x} numero={numero}/>);
-    }
-    
+    const renderCirculos = () => circulos.map((elem) => (<Circulo posicao={elem} numero={props.numero} key={elem}/>));
+
     return (
-        <Dado tamanho={4} onClick={() => fazSorteio()}>
-            {circulos}
+        <Dado tamanho={props.tamanho}>
+            {renderCirculos()}
         </Dado>
     );
 }
 
-export default Dado6;
+export default Retorno;

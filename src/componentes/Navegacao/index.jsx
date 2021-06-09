@@ -12,7 +12,7 @@ const Navegacao = styled.nav
     width: 100%;
 `
 
-const retorno = () => {
+const Retorno = () => {
     return (
         <Navegacao>
             <Botao to='/dadojs/dado6'>D6</Botao>
@@ -20,4 +20,4 @@ const retorno = () => {
     );
 }
 
-export default retorno;
+export default Retorno;

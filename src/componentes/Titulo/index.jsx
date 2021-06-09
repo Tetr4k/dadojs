@@ -9,10 +9,10 @@ const Titulo = styled(Link)
   text-decoration: none;
 `
 
-const retorno = () => {
+const Retorno = () => {
     return (
         <Titulo to='/dadojs'>DadoJS</Titulo>
     );
 }
 
-export default retorno;
+export default Retorno;

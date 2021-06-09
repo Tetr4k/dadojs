@@ -14,7 +14,7 @@ const Cabecalho = styled.header
   justify-content: center;
 `
 
-const retorno = () => {
+const Retorno = () => {
     return (
         <Cabecalho>
             <Titulo/>
@@ -22,4 +22,4 @@ const retorno = () => {
     );
 };
 
-export default retorno;
+export default Retorno;

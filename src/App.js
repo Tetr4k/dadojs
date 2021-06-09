@@ -1,4 +1,4 @@
-import Dado6 from './componentes/dados/Dado6';
+import PaginaDado6 from './PaginaDado6';
 import Cabecalho from './componentes/Cabecalho';
 import Navegacao from './componentes/Navegacao';
 import Conteudo from './componentes/Conteudo';
@@ -24,7 +24,8 @@ function App() {
         </Route>
         <Route path='/dadojs/dado6'>
           <Conteudo>
-            <Dado6/>
+            <CaixaTexto>Clique para jogar!</CaixaTexto>
+            <PaginaDado6/>
           </Conteudo>
         </Route>
       </Switch>
