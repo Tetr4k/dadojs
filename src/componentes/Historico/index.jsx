@@ -4,7 +4,7 @@ const Historico = styled.div
 `
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    overflow: auto;
 `
 
 export default Historico;

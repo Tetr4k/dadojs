@@ -24,7 +24,7 @@ function App() {
         </Route>
         <Route path='/dadojs/dado6'>
           <Conteudo>
-            <CaixaTexto>Clique para jogar!</CaixaTexto>
+            <CaixaTexto>Clique no dado para jogar!</CaixaTexto>
             <PaginaDado6/>
           </Conteudo>
         </Route>

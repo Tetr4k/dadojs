@@ -5,8 +5,7 @@ import Historico from '../componentes/Historico'
 
 const PaginaDado6 = styled.div
 `
-    display: flex;
-    justify-content: left;
+    margin: auto;
 `
 
 const Retorno = () => {
@@ -44,7 +43,7 @@ const Retorno = () => {
 
     return (
         <PaginaDado6 onClick={() => fazSorteio()}>
-            <Dado6 tamanho={3} numero={state.numero}/>
+            <Dado6 tamanho={5} numero={state.numero}/>
             <Historico>
                 {renderHistorico()}
             </Historico>

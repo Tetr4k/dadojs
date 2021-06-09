@@ -7,6 +7,7 @@ const CaixaTexto = styled.p
     border: ${corFundoPrincipal} 1px solid;
     border-radius: 2rem;
     color: ${corTextoPrincipal};
+    text-align: center;
     margin-bottom: 1rem;
     padding: 2rem;
 `
