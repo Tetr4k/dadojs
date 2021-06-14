@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { corFundoPrincipal } from '../Colors';
 
 const GlobalStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -43,6 +44,9 @@ const GlobalStyle = createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+  :root{
+    background: ${corFundoPrincipal};
   }
 `
 
