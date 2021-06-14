@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Historico from '../componentes/Historico'
 
-const PaginaDado6 = styled.div
-`
+const PaginaDado6 = styled.div`
     margin: auto;
 `
 
@@ -37,14 +36,14 @@ const Retorno = () => {
     const renderHistorico = () => {
         return state.historico.map((elem, indice) => {
             if(indice === state.historico.length-1) return null;
-            return (<Dado6 tamanho={1} numero={elem}/>)
+            return (<li><Dado6 tamanho={2} numero={elem}/></li>)
         }).reverse();
     }
 
     return (
-        <PaginaDado6 onClick={() => fazSorteio()}>
-            <Dado6 tamanho={5} numero={state.numero}/>
-            <Historico>
+        <PaginaDado6>
+            <Historico onClick={() => fazSorteio()}>
+                <Dado6 tamanho={3} numero={state.numero}/>
                 {renderHistorico()}
             </Historico>
         </PaginaDado6>

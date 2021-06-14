@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Circulo from '../Circulo';
 import { corDadoPadrao } from '../../../Colors'
 
-const Dado = styled.div
-`
+const Dado = styled.div`
     background: ${corDadoPadrao};
     border: ${corDadoPadrao} 1px solid;
     border-radius: 25%;
@@ -16,14 +15,6 @@ const Dado = styled.div
     margin: 1rem;
     padding: ${(props) => props.tamanho}rem;
     width: calc(3 * ${(props) => props.tamanho}rem + 2rem);
-
-    @media screen and (max-width: 900px){
-        grid-template-columns: ${(props) => props.tamanho/3}rem ${(props) => props.tamanho/3}rem ${(props) => props.tamanho/3}rem;
-        grid-template-rows: ${(props) => props.tamanho/3}rem ${(props) => props.tamanho/3}rem ${(props) => props.tamanho/3}rem;
-        height: calc(3 * ${(props) => props.tamanho/3}rem + 2rem);
-        padding: ${(props) => props.tamanho/3}rem;
-        width: calc(3 * ${(props) => props.tamanho/3}rem + 2rem);
-    }
 `
 
 const Retorno = (props) => {

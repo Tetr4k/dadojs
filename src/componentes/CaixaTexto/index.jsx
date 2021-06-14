@@ -1,15 +1,14 @@
 import styled from 'styled-components'
-import { corFundoPrincipal, corTextoPrincipal} from '../../Colors';
+import { corFundoSecundaria, corTextoPrincipal} from '../../Colors';
 
-const CaixaTexto = styled.p
-`
-    background: ${corFundoPrincipal};
-    border: ${corFundoPrincipal} 1px solid;
+const CaixaTexto = styled.p`
+    background: ${corFundoSecundaria};
+    border: ${corFundoSecundaria} 1px solid;
     border-radius: 2rem;
     color: ${corTextoPrincipal};
     text-align: center;
-    margin-bottom: 1rem;
-    padding: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
 `
 
 export default CaixaTexto;

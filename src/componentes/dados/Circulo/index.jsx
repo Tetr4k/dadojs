@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { coresCirculos } from '../../../Colors';
 
-const Circulo = styled.div
-`
+const Circulo = styled.div`
     background: ${ (props) => coresCirculos[props.numero-1]};
     border-radius: 100%;
     grid-row: ${ (props) => {
