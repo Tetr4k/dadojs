@@ -11,10 +11,6 @@ const Retorno = () => {
 
     const [ brilho, setBrilho] = useState(false);
 
-    const handleChange = (event) => {
-        setBrilho({ ...brilho, [event.target.name]: event.target.checked });
-    };
-
     return (
         <FormGroup>
             <FormControlLabel
@@ -24,7 +20,7 @@ const Retorno = () => {
                             checked={brilho}
                             color="default"
                             name="brilho"
-                            onChange={handleChange}
+                            onChange={() => setBrilho(!brilho)}
                             size="normal"
                         />
                     </BotaoTroca>

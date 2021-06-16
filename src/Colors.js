@@ -1,4 +1,5 @@
 export const corTextoPrincipal  = `white`;
+export const corTextoSecundaria = `gray`;
 export const corFundoPrincipal  = `#666`;
 export const corFundoSecundaria = `#333`;
 export const corDadoPadrao      = '#222';

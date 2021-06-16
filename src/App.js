@@ -18,10 +18,11 @@ function App() {
         <Route exact path='/dadojs'>
           <Conteudo>
             <CaixaTexto>
-              Esta é uma aplicação onde estou tentando implementar alguns dados(D4, D6, D20...)
+              Este é APP onde estou implementando alguns dados.
+              <br/>(D6, D8, D20, etc. . .)
             </CaixaTexto>
             <CaixaTexto>
-              Para entrar em contato:
+              Contato:
               <ol>
                 <li>
                 <a href="https://github.com/Tetr4k">GitHub</a>
