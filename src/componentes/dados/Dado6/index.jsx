@@ -7,6 +7,7 @@ const Dado = styled.div`
     background: ${corDadoPadrao};
     border: ${corDadoPadrao} 1px solid;
     border-radius: 25%;
+    box-shadow: 0 0 0.5rem 1px black inset;
     display: grid;
     gap: 1rem;
     grid-template-columns: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
