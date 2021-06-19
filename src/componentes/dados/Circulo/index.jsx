@@ -3,9 +3,9 @@ import { coresCirculos } from '../../../Colors';
 
 const Circulo = styled.div`
     background: ${ (props) => coresCirculos[props.numero-1]};
-    border: solid 1px ${ (props) => coresCirculos[props.numero-1]};
+    border: solid 2px ${ (props) => coresCirculos[props.numero-1]};
     border-radius: 100%;
-    box-shadow: 1px 1px 3px 2px black inset;
+    box-shadow: 1px 1px 5px 1px black inset;
     grid-row: ${ (props) => {
         switch(props.posicao){
             case 1:
