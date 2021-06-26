@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { corFundoSecundaria, corTextoPrincipal, corTextoSecundaria} from '../../Colors';
 
-const CaixaTexto = styled.p`
+const CaixaTexto = styled.div`
     background: ${corFundoSecundaria};
     border: ${corFundoSecundaria} 1px solid;
     border-radius: 2rem;
