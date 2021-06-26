@@ -13,7 +13,7 @@ const Dado = styled.div`
     grid-template-columns: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
     grid-template-rows: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
     height: calc(3 * ${(props) => props.tamanho}rem + 2rem);
-    margin: 1rem;
+    margin: 1rem auto;
     padding: ${(props) => props.tamanho}rem;
     width: calc(3 * ${(props) => props.tamanho}rem + 2rem);
 `
@@ -25,7 +25,7 @@ const Retorno = (props) => {
     const renderCirculos = () => circulos.map((elem) => (<Circulo posicao={elem} numero={props.numero} key={elem}/>));
 
     return (
-        <Dado tamanho={props.tamanho}>
+        <Dado onClick={props.onClick} tamanho={props.tamanho}>
             {renderCirculos()}
         </Dado>
     );
