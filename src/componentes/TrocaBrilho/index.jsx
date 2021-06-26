@@ -21,7 +21,7 @@ const Retorno = () => {
                             color="default"
                             name="brilho"
                             onChange={() => setBrilho(!brilho)}
-                            size="normal"
+                            size="medium"
                         />
                     </BotaoTroca>
                 }
