@@ -54,7 +54,7 @@ const Retorno = () => {
     const renderHistorico = () => {
         return state.historico.map((elem, indice) => {
             if(indice === state.historico.length-1) return null;
-            return (<li><Dado6 tamanho={2} numero={elem}/></li>)
+            return (<li key={indice}><Dado6 tamanho={2} numero={elem}/></li>)
         }).reverse();
     }
 
@@ -67,12 +67,12 @@ const Retorno = () => {
     }
 
     return (
-        <PaginaDado6>
+        <PaginaDado6 >
             <Acoes>
                 <Botao onClick={limpaHistorico}>Limpar Historico</Botao>
             </Acoes>
-            <Historico onClick={fazSorteio}>
-                <Dado6 tamanho={3} numero={state.numero}/>
+            <Dado6 onClick={fazSorteio} tamanho={3} numero={state.numero}/>
+            <Historico>
                 {renderHistorico()}
             </Historico>
         </PaginaDado6>
