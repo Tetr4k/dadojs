@@ -15,7 +15,7 @@ function App() {
       <Cabecalho/>
       <Navegacao/>
       <Switch>
-        <Route exact path='/dadojs'>
+        <Route exact path='/'>
           <Conteudo>
             <CaixaTexto>
               Este é APP onde estou implementando alguns dados.
@@ -37,7 +37,7 @@ function App() {
             </CaixaTexto>
           </Conteudo>
         </Route>
-        <Route path='/dadojs/dado6'>
+        <Route path='/dado6'>
           <Conteudo>
             <CaixaTexto>Clique no dado para jogar!</CaixaTexto>
             <PaginaDado6/>
