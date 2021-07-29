@@ -18,7 +18,7 @@ const Titulo = styled(Link)`
 
 const Retorno = () => {
     return (
-        <Titulo to='/dadojs'>DadoJS</Titulo>
+        <Titulo to='/'>DadoJS</Titulo>
     );
 }
 
