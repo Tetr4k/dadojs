@@ -3,12 +3,12 @@
         {
             "src": "/",
             "dest": "/",
-            "status": "200"
+            "status": 200
         },
         {
             "src": "/dadojs",
             "dest": "/dadojs",
-            "status": "200"
+            "status": 200
         }
     ]
 }
