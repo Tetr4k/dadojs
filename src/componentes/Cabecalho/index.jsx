@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Titulo from '../Titulo';
-import TrocaBrilho from '../TrocaBrilho'
 import { corFundoSecundaria, corTextoPrincipal } from '../../Colors'
 
 const Cabecalho = styled.header`
