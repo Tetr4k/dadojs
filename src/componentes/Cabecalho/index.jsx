@@ -24,7 +24,6 @@ const Retorno = () => {
     return (
         <Cabecalho>
             <Titulo/>
-            <TrocaBrilho/>
         </Cabecalho>
     );
 };
