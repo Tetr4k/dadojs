@@ -17,6 +17,10 @@ const Botao = styled.button`
     }
 `
 
+const BotaoLimpar = styled(Botao)`
+    content: "&trash"
+`
+
 const Acoes = styled.div`
     display: flex;
 `
@@ -69,7 +73,7 @@ const Retorno = () => {
     return (
         <PaginaDado6 >
             <Acoes>
-                <Botao onClick={limpaHistorico}>Limpar Historico</Botao>
+                <BotaoLimpar onClick={limpaHistorico}></BotaoLimpar>
             </Acoes>
             <Dado6 onClick={fazSorteio} tamanho={3} numero={state.numero}/>
             <Historico>
