@@ -18,7 +18,7 @@ const Botao = styled.button`
 `
 
 const BotaoLimpar = styled(Botao)`
-    content: "&trash"
+    content: "&trash";
 `
 
 const Acoes = styled.div`

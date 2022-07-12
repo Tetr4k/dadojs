@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 import { corTextoPrincipal, corTextoSecundaria } from '../../Colors'
 
-const Titulo = styled(Link)`
+const Titulo = styled.h1`
   align-items: center;
   color: ${corTextoPrincipal};
   font-size: 3rem;
@@ -18,7 +17,7 @@ const Titulo = styled(Link)`
 
 const Retorno = () => {
     return (
-        <Titulo to='/'>DadoJS</Titulo>
+        <Titulo>DadoJS</Titulo>
     );
 }
 

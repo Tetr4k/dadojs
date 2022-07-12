@@ -3,16 +3,16 @@ import Cabecalho from './componentes/Cabecalho';
 import Conteudo from './componentes/Conteudo';
 import CaixaTexto from './componentes/CaixaTexto';
 
-function App() {
+const Retorno = () => {
   return (
-    <App>
+    <div>
       <Cabecalho/>
       <Conteudo>
         <CaixaTexto>Clique no dado para jogar!</CaixaTexto>
         <PaginaDado6/>
       </Conteudo>
-    </App>
+    </div>
   );
 }
 
-export default App;
+export default Retorno;
