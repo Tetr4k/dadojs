@@ -55,13 +55,13 @@ const Retorno = () => {
 
     return (
         <PaginaDado6 >
-            <Acoes>
-                <BotaoLimpar onClick={limpaHistorico}/>
-            </Acoes>
             <Dado6 onClick={fazSorteio} tamanho={3} numero={state.numero}/>
             <Historico>
                 {renderHistorico()}
             </Historico>
+            <Acoes>
+                <BotaoLimpar onClick={limpaHistorico}/>
+            </Acoes>
         </PaginaDado6>
     )
 }
