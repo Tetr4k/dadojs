@@ -3,7 +3,7 @@ import Cabecalho from './componentes/Cabecalho';
 import Conteudo from './componentes/Conteudo';
 import CaixaTexto from './componentes/CaixaTexto';
 
-const Retorno = () => {
+const App = () => {
   return (
     <div>
       <Cabecalho/>
@@ -15,4 +15,4 @@ const Retorno = () => {
   );
 }
 
-export default Retorno;
+export default App;
