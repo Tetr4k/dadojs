@@ -14,7 +14,7 @@ const PaginaDado6 = styled.div`
 
 const Retorno = () => {
 
-    const [ state, setState] = useState({
+    const [state, setState] = useState({
         numero: 6,
         historico: []
     });
