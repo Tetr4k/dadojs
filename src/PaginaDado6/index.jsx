@@ -2,24 +2,7 @@ import Dado6 from '../componentes/dados/Dado6'
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Historico from '../componentes/Historico'
-import { corFundoSecundaria, corTextoPrincipal, corTextoSecundaria } from '../Colors';
-
-const Botao = styled.button`
-    background: ${corFundoSecundaria};
-    border: solid 1px ${corFundoSecundaria};
-    border-radius: 1rem;
-    color: ${corTextoPrincipal};
-    padding: 0.6rem;
-    box-shadow: 1px 1px 0.4rem 0.1rem black;
-    &:hover{
-        color: ${corTextoSecundaria};
-        box-shadow: none;
-    }
-`
-
-const BotaoLimpar = styled(Botao)`
-    content: "&trash";
-`
+import BotaoLimpar from '../componentes/BotaoLimpar'
 
 const Acoes = styled.div`
     display: flex;
@@ -73,7 +56,7 @@ const Retorno = () => {
     return (
         <PaginaDado6 >
             <Acoes>
-                <BotaoLimpar onClick={limpaHistorico}></BotaoLimpar>
+                <BotaoLimpar onClick={limpaHistorico}/>
             </Acoes>
             <Dado6 onClick={fazSorteio} tamanho={3} numero={state.numero}/>
             <Historico>

@@ -4,7 +4,6 @@ import Link from '../Link';
 import { corFundoSecundaria, corTextoPrincipal } from '../../Colors'
 
 const Cabecalho = styled.header`
-
     background-color: ${corFundoSecundaria};
     border-bottom: white 1px solid;
     color: ${corTextoPrincipal};
