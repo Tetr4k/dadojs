@@ -13,4 +13,13 @@ const Historico = styled.ol`
     z-index: -1;
 `
 
-export default Historico;
+
+const renderHistorico = (conteudo) => {
+    return conteudo.map((elem, indice) => {
+        if(indice === conteudo.length-1) return null;
+        return (<li key={indice}><Dado6 tamanho={1} numero={elem}/></li>)
+    }).reverse();
+}
+
+}
+export default Retorno;
