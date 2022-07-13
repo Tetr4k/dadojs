@@ -17,7 +17,7 @@ const PaginaDado6 = styled.div`
     margin-bottom: 1rem;
     position: fixed;
     bottom: 0;
-    height: 77%;
+    height: 85%;
     width: 100%;
 `
 
