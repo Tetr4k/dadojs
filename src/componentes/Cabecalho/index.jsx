@@ -10,9 +10,10 @@ const Cabecalho = styled.header`
     display: flex;
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
+    height: 10%;
     justify-content: space-between;
-    padding: 0.5rem;
     left: 0;
+    padding: 0.5rem;
     position: fixed;
     top: 0;
     width: 100%;

@@ -1,16 +1,15 @@
 import styled from 'styled-components';
+import Dado6 from '../dados/Dado6';
+import {corFundoPrincipal} from '../../Colors';
 
 const Historico = styled.ol`
-    align-items: center;
     display: flex;
-    flex-direction: column-reverse;
-    height: 50vh;
     overflow: scroll;
+    width: 100%;
+`
+
     position: fixed;
     right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
 `
 
 

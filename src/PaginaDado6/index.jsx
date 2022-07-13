@@ -6,10 +6,20 @@ import BotaoLimpar from '../componentes/BotaoLimpar'
 
 const Acoes = styled.div`
     display: flex;
+    gap: 1rem;
+    padding: 1rem;
 `
 
 const PaginaDado6 = styled.div`
-    margin: auto;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
 `
 
 const Retorno = () => {

@@ -13,7 +13,7 @@ const Dado = styled.div`
     grid-template-columns: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
     grid-template-rows: ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem ${(props) => props.tamanho}rem;
     height: calc(3 * ${(props) => props.tamanho}rem + 2rem);
-    margin: 1rem auto;
+    margin: 1rem;
     padding: ${(props) => props.tamanho}rem;
     width: calc(3 * ${(props) => props.tamanho}rem + 2rem);
 `
