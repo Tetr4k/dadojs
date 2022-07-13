@@ -14,11 +14,10 @@ const PaginaDado6 = styled.div`
     align-items: flex-end;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     margin-bottom: 1rem;
     position: fixed;
     bottom: 0;
-    height: 85%;
+    height: 77%;
     width: 100%;
 `
 
