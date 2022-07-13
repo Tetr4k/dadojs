@@ -8,7 +8,19 @@ const Historico = styled.ol`
     width: 100%;
 `
 
+const Gradiente = styled.div`
+    margin-top: 1rem;
+    height: 7rem;
     position: fixed;
+`
+
+const GradienteEsquerdo = styled(Gradiente)`
+    box-shadow: 0 0 1rem 1rem ${corFundoPrincipal};
+    left: 0;
+`
+
+const GradienteDireito = styled(Gradiente)`
+    box-shadow: 0 0 1rem 1rem ${corFundoPrincipal};
     right: 0;
 `
 
@@ -20,5 +32,13 @@ const renderHistorico = (conteudo) => {
     }).reverse();
 }
 
+const Retorno = (props) => {
+    return (
+        <Historico>
+            {renderHistorico(props.conteudo)}
+            <GradienteEsquerdo/>
+            <GradienteDireito/>
+        </Historico>
+    )
 }
 export default Retorno;
