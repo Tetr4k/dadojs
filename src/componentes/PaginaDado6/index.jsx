@@ -6,6 +6,7 @@ import BotaoTrocar from '../BotaoLimpar';
 import Acoes from '../Acoes';
 import {useNumero} from '../../hooks/useNumero'
 import {useHistorico} from '../../hooks/useHistorico';
+import {useLado} from '../../hooks/useLado';
 import {AlinhamentoContext} from '../../context/AlinhamentoContext';
 import {useContext} from 'react';
 
@@ -23,6 +24,7 @@ const PaginaDado = styled.div`
 const Retorno = (props) => {
     const [numero, setNumero] = useNumero(6);
     const [historico, setHistorico] = useHistorico();
+    const [lado, trocaLado] = useLado();
     const alinhamento = useContext(AlinhamentoContext);
 
     const geraNumero = (numero) => {
@@ -52,8 +54,8 @@ const Retorno = (props) => {
                 <Dado6 onClick={fazSorteio} tamanho={3} numero={numero}/>
                 <Acoes alinhamento={alinhamento}>
                     <BotaoLimpar onClick={limpaHistorico}/>
-                <BotaoTrocar/>
-            </Acoes>
+                    <BotaoTrocar onClick={trocaLado}/>
+                </Acoes>
                 <Historico conteudo={historico}/>
             </PaginaDado>
         </AlinhamentoContext.Provider>
