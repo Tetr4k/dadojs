@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Historico from '../componentes/Historico'
 import BotaoLimpar from '../componentes/BotaoLimpar'
+import BotaoTrocar from '../componentes/BotaoLimpar'
 import Acoes from '../componentes/Acoes'
 
 const PaginaDado6 = styled.div`
@@ -20,7 +21,8 @@ const Retorno = () => {
 
     const [state, setState] = useState({
         numero: 6,
-        historico: []
+        historico: [],
+        lado: true
     });
 
     const geraNumero = (numero) => {
@@ -37,7 +39,8 @@ const Retorno = () => {
         novoHistorico.push(novoNumero);
         const novoState = {
             numero: novoNumero,
-            historico: novoHistorico
+            historico: novoHistorico,
+            lado: state.lado
         }
         setState(novoState);
     }
@@ -45,9 +48,20 @@ const Retorno = () => {
     const limpaHistorico = () =>{
         const novoState = {
             numero: state.numero,
-            historico: []
+            historico: [],
+            lado: state.lado
         }
         setState(novoState);
+    }
+
+    const trocaLado = () =>{
+        const novoState = {
+            numero: state.numero,
+            historico: state.historico,
+            lado: !state.lado
+        }
+        setState(novoState);
+        console.log(state.lado)
     }
 
     return (
@@ -55,6 +69,7 @@ const Retorno = () => {
             <Dado6 onClick={fazSorteio} tamanho={3} numero={state.numero}/>
             <Acoes>
                 <BotaoLimpar onClick={limpaHistorico}/>
+                <BotaoTrocar onClick={trocaLado}/>
             </Acoes>
             <Historico conteudo={state.historico}/>
         </PaginaDado6>
