@@ -1,10 +1,11 @@
 import Dado6 from '../dados/Dado6'
-import React, { useState } from 'react';
 import styled from 'styled-components';
-import Historico from '../Historico'
-import BotaoLimpar from '../BotaoLimpar'
-import BotaoTrocar from '../BotaoLimpar'
-import Acoes from '../Acoes'
+import Historico from '../Historico';
+import BotaoLimpar from '../BotaoLimpar';
+import BotaoTrocar from '../BotaoLimpar';
+import Acoes from '../Acoes';
+import {useNumero} from '../../hooks/useNumero'
+import {useHistorico} from '../../hooks/useHistorico';
 
 const PaginaDado6 = styled.div`
     align-items: flex-end;
@@ -19,11 +20,8 @@ const PaginaDado6 = styled.div`
 
 const Retorno = () => {
 
-    const [state, setState] = useState({
-        numero: 6,
-        historico: [],
-        lado: true
-    });
+    const [numero, setNumero] = useNumero(6);
+    const [historico, setHistorico] = useHistorico();
 
     const geraNumero = (numero) => {
         const novoValor = Math.floor(Math.random()*6)+1;
@@ -34,44 +32,26 @@ const Retorno = () => {
     }
 
     const fazSorteio = () => {
-        const novoNumero = geraNumero(state.numero);
-        const novoHistorico = state.historico;
+        const novoNumero = geraNumero(numero);
+        setNumero(novoNumero);
+
+        const novoHistorico = historico;
         novoHistorico.push(novoNumero);
-        const novoState = {
-            numero: novoNumero,
-            historico: novoHistorico,
-            lado: state.lado
-        }
-        setState(novoState);
+        setHistorico(novoHistorico);
     }
 
     const limpaHistorico = () =>{
-        const novoState = {
-            numero: state.numero,
-            historico: [],
-            lado: state.lado
-        }
-        setState(novoState);
-    }
-
-    const trocaLado = () =>{
-        const novoState = {
-            numero: state.numero,
-            historico: state.historico,
-            lado: !state.lado
-        }
-        setState(novoState);
-        console.log(state.lado)
+        setHistorico([]);
     }
 
     return (
         <PaginaDado6 >
-            <Dado6 onClick={fazSorteio} tamanho={3} numero={state.numero}/>
+            <Dado6 onClick={fazSorteio} tamanho={3} numero={numero}/>
             <Acoes>
                 <BotaoLimpar onClick={limpaHistorico}/>
-                <BotaoTrocar onClick={trocaLado}/>
+                <BotaoTrocar/>
             </Acoes>
-            <Historico conteudo={state.historico}/>
+            <Historico conteudo={historico}/>
         </PaginaDado6>
     )
 }
