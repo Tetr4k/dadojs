@@ -7,8 +7,6 @@ import Acoes from '../Acoes';
 import {useNumero} from '../../hooks/useNumero'
 import {useHistorico} from '../../hooks/useHistorico';
 import {useLado} from '../../hooks/useLado';
-import {AlinhamentoContext} from '../../context/AlinhamentoContext';
-import {useContext} from 'react';
 
 const PaginaDado = styled.div`
     align-items: ${(props) => props.alinhamento ? 'flex-end': 'flex-start'};
@@ -17,15 +15,14 @@ const PaginaDado = styled.div`
     margin-bottom: 1rem;
     position: fixed;
     bottom: 0;
-    height: 85%;
+    height: 75%;
     width: 100%;
 `
 
-const Retorno = (props) => {
+const Retorno = () => {
     const [numero, setNumero] = useNumero(6);
     const [historico, setHistorico] = useHistorico();
-    const [lado, trocaLado] = useLado();
-    const alinhamento = useContext(AlinhamentoContext);
+    const [lado, trocaLado] = useLado(true);
 
     const geraNumero = (numero) => {
         const novoValor = Math.floor(Math.random()*6)+1;
@@ -49,16 +46,14 @@ const Retorno = (props) => {
     }
 
     return (
-        <AlinhamentoContext.Provider value={lado}>
-            <PaginaDado alinhamento={alinhamento}>
-                <Dado6 onClick={fazSorteio} tamanho={3} numero={numero}/>
-                <Acoes alinhamento={alinhamento}>
-                    <BotaoLimpar onClick={limpaHistorico}/>
-                    <BotaoTrocar onClick={trocaLado}/>
-                </Acoes>
-                <Historico conteudo={historico}/>
-            </PaginaDado>
-        </AlinhamentoContext.Provider>
+        <PaginaDado alinhamento={lado}>
+            <Dado6 onClick={fazSorteio} tamanho={2} numero={numero}/>
+            <Acoes alinhamento={lado}>
+                <BotaoLimpar onClick={limpaHistorico}>♻</BotaoLimpar>
+                <BotaoTrocar onClick={trocaLado}>{lado ? '←' : '→'}</BotaoTrocar>
+            </Acoes>
+            <Historico conteudo={historico}/>
+        </PaginaDado>
     )
 }
 

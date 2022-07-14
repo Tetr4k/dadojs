@@ -1,12 +1,9 @@
 import {useState} from 'react';
 
-export const useLado = () => {
-	const [lado, setLado] = useState(true);
+export const useLado = (alinhamento) => {
+	const [lado, setLado] = useState(alinhamento);
 
-	const trocaLado = (lado) => {
-		console.log("Aaaaaa")
-		setLado(!lado)
-	};
+	const trocaLado = () => setLado(!lado)
 
 	return [lado, trocaLado];
 }
