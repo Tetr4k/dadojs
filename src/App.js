@@ -1,4 +1,4 @@
-import PaginaDado6 from './PaginaDado6';
+import PaginaDado6 from './componentes/PaginaDado6';
 import Cabecalho from './componentes/Cabecalho';
 import Conteudo from './componentes/Conteudo';
 

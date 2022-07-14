@@ -1,10 +1,10 @@
-import Dado6 from '../componentes/dados/Dado6'
+import Dado6 from '../dados/Dado6'
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Historico from '../componentes/Historico'
-import BotaoLimpar from '../componentes/BotaoLimpar'
-import BotaoTrocar from '../componentes/BotaoLimpar'
-import Acoes from '../componentes/Acoes'
+import Historico from '../Historico'
+import BotaoLimpar from '../BotaoLimpar'
+import BotaoTrocar from '../BotaoLimpar'
+import Acoes from '../Acoes'
 
 const PaginaDado6 = styled.div`
     align-items: flex-end;
