@@ -27,7 +27,7 @@ const GradienteDireito = styled(Gradiente)`
 
 const renderHistorico = (conteudo) => {
     return conteudo.map((elem, indice) => {
-        if(indice === conteudo.length-1) return null;
+        if(indice === conteudo.length) return null;
         return (<li key={indice}><Dado6 tamanho={1} numero={elem}/></li>)
     }).reverse();
 }

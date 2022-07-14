@@ -3,12 +3,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Historico from '../componentes/Historico'
 import BotaoLimpar from '../componentes/BotaoLimpar'
-
-const Acoes = styled.div`
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-`
+import Acoes from '../componentes/Acoes'
 
 const PaginaDado6 = styled.div`
     align-items: flex-end;
