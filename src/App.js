@@ -1,16 +1,21 @@
 import PaginaDado6 from './componentes/PaginaDado6';
 import Cabecalho from './componentes/Cabecalho';
 import Conteudo from './componentes/Conteudo';
+import styled from 'styled-components';
 
-const App = () => {
+const App = styled.div`
+
+`
+
+const Retorno = () => {
   return (
-    <div>
+    <App>
       <Cabecalho/>
       <Conteudo>
         <PaginaDado6/>
       </Conteudo>
-    </div>
+    </App>
   );
 }
 
-export default App;
+export default Retorno;
