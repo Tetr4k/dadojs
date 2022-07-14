@@ -1,10 +1,10 @@
 import Botao from '../Botao'
 import styled from 'styled-components';
 
-const BotaoTroca = styled(Botao)`
+const BotaoTrocar = styled(Botao)`
     &:after{
         content: "";
     }
 `
 
-export default BotaoTroca;
+export default BotaoTrocar;
