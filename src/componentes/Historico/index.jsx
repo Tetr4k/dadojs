@@ -24,7 +24,6 @@ const GradienteDireito = styled(Gradiente)`
     right: 0;
 `
 
-
 const renderHistorico = (conteudo) => {
     return conteudo.map((elem, indice) => {
         if(indice === conteudo.length) return null;
