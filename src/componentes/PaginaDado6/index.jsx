@@ -6,9 +6,11 @@ import BotaoTrocar from '../BotaoLimpar';
 import Acoes from '../Acoes';
 import {useNumero} from '../../hooks/useNumero'
 import {useHistorico} from '../../hooks/useHistorico';
+import {AlinhamentoContext} from '../../context/AlinhamentoContext';
+import {useContext} from 'react';
 
-const PaginaDado6 = styled.div`
-    align-items: flex-end;
+const PaginaDado = styled.div`
+    align-items: ${(props) => props.alinhamento ? 'flex-end': 'flex-start'};
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -18,10 +20,10 @@ const PaginaDado6 = styled.div`
     width: 100%;
 `
 
-const Retorno = () => {
-
+const Retorno = (props) => {
     const [numero, setNumero] = useNumero(6);
     const [historico, setHistorico] = useHistorico();
+    const alinhamento = useContext(AlinhamentoContext);
 
     const geraNumero = (numero) => {
         const novoValor = Math.floor(Math.random()*6)+1;
@@ -45,14 +47,16 @@ const Retorno = () => {
     }
 
     return (
-        <PaginaDado6 >
-            <Dado6 onClick={fazSorteio} tamanho={3} numero={numero}/>
-            <Acoes>
-                <BotaoLimpar onClick={limpaHistorico}/>
+        <AlinhamentoContext.Provider value={lado}>
+            <PaginaDado alinhamento={alinhamento}>
+                <Dado6 onClick={fazSorteio} tamanho={3} numero={numero}/>
+                <Acoes alinhamento={alinhamento}>
+                    <BotaoLimpar onClick={limpaHistorico}/>
                 <BotaoTrocar/>
             </Acoes>
-            <Historico conteudo={historico}/>
-        </PaginaDado6>
+                <Historico conteudo={historico}/>
+            </PaginaDado>
+        </AlinhamentoContext.Provider>
     )
 }
 
