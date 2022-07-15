@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { corTextoPrincipal, corTextoSecundaria } from '../../Colors'
+import { corTextoPrimaria, corTextoSecundaria } from '../../Colors'
 
 const Link = styled.a`
-  color: ${corTextoPrincipal};
+  color: ${corTextoPrimaria};
   font-size: 1rem;
   margin-left: 1rem;
   text-decoration: none;

@@ -5,7 +5,7 @@ import { corDadoPadrao } from '../../../Colors'
 
 const Dado = styled.div`
     background: ${corDadoPadrao};
-    border: ${corDadoPadrao} 1px solid;
+    border: none;
     border-radius: 25%;
     box-shadow: 0 0 2rem black inset, 1rem 1rem 0.5rem -0.5rem black;
     display: grid;

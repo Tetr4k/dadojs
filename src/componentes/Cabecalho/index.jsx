@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import Titulo from '../Titulo';
 import Link from '../Link';
-import { corFundoSecundaria, corTextoPrincipal } from '../../Colors'
+import {corFundoSecundaria, corTextoPrimaria} from '../../Colors'
 
 const Cabecalho = styled.header`
     background-color: ${corFundoSecundaria};
     border-bottom: white 2px dashed;
-    color: ${corTextoPrincipal};
+    color: ${corTextoPrimaria};
     display: flex;
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
