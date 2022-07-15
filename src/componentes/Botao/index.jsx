@@ -7,7 +7,8 @@ const Botao = styled.button`
     border-radius: 100%;
     box-shadow: 1px 1px 0.4rem 0.1rem black;
     color: ${corTextoPrimaria};
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
     height: 5rem;
     width: 5rem;
     &:hover{
