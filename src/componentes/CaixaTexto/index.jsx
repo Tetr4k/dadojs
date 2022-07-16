@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { corFundoSecundaria, corTextoPrincipal, corTextoSecundaria} from '../../Colors';
+import styled from 'styled-components';
+import { corFundoSecundaria, corTextoPrincipal, corTextoSecundaria } from 'Colors';
 
 const CaixaTexto = styled.div`
     background: ${corFundoSecundaria};

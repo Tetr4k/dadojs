@@ -1,5 +1,5 @@
-import Botao from '../Botao'
 import styled from 'styled-components';
+import Botao from 'componentes/Botao';
 
 const BotaoLimpar = styled(Botao)`
 	content: '♻';

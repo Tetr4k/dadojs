@@ -1,12 +1,12 @@
-import Dado6 from '../dados/Dado6'
 import styled from 'styled-components';
-import Historico from '../Historico';
-import BotaoLimpar from '../BotaoLimpar';
-import BotaoTrocar from '../BotaoLimpar';
-import Acoes from '../Acoes';
-import {useNumero} from '../../hooks/useNumero'
-import {useHistorico} from '../../hooks/useHistorico';
-import {useLado} from '../../hooks/useLado';
+import Acoes from 'componentes/Acoes';
+import BotaoLimpar from 'componentes/BotaoLimpar';
+import BotaoTrocar from 'componentes/BotaoLimpar';
+import Dado6 from 'componentes/dados/Dado6'
+import Historico from 'componentes/Historico';
+import { useHistorico } from 'hooks/useHistorico';
+import { useLado } from 'hooks/useLado';
+import { useNumero } from 'hooks/useNumero';
 
 const PaginaDado = styled.div`
     align-items: ${(props) => props.alinhamento ? 'flex-end': 'flex-start'};

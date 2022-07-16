@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Dado6 from '../dados/Dado6';
-import {corFundoPrincipal} from '../../Colors';
+import Dado6 from 'componentes/dados/Dado6';
+import { corFundoPrincipal } from 'Colors';
 
 const Historico = styled.ol`
     display: flex;

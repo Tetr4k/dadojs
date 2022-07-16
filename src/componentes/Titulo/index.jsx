@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {corTextoPrimaria} from '../../Colors'
+import { corTextoPrimaria } from 'Colors';
 
 const Titulo = styled.h1`
   color: ${corTextoPrimaria};

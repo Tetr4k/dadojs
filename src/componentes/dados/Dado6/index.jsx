@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Circulo from '../Circulo';
-import { corDadoPadrao } from '../../../Colors'
+import Circulo from 'componentes/dados/Circulo';
+import { corDadoPadrao } from 'Colors';
 
 const Dado = styled.div`
     background: ${corDadoPadrao};

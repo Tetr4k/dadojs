@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { coresCirculos } from '../../../Colors';
+import { coresCirculos } from 'Colors';
 
 const Circulo = styled.div`
     background: ${ (props) => coresCirculos[props.numero-1]};

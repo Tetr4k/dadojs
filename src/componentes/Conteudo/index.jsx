@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PaginaDado6 from '../PaginaDado6';
+import PaginaDado6 from 'componentes/PaginaDado6';
 
 const Conteudo = styled.main`
     font-family: 'Rubik', sans-serif;

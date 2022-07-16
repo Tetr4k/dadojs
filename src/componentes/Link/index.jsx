@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { corTextoPrimaria, corTextoSecundaria } from '../../Colors'
+import { corTextoPrimaria, corTextoSecundaria } from 'Colors';
 
 const Link = styled.a`
   color: ${corTextoPrimaria};

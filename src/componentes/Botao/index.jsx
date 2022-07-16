@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { corBotaoPrimaria, corBotaoSecundaria, corTextoPrimaria } from '../../Colors';
+import styled from 'styled-components';
+import { corBotaoPrimaria, corTextoPrimaria } from 'Colors';
 
 const Botao = styled.button`
     background: ${corBotaoPrimaria};
@@ -11,10 +11,6 @@ const Botao = styled.button`
     text-align: center;
     height: 5rem;
     width: 5rem;
-    &:hover{
-        background: ${corBotaoSecundaria};
-        box-shadow: none;
-    }
 `
 
 export default Botao;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Titulo from '../Titulo';
-import Link from '../Link';
-import {corFundoSecundaria, corTextoPrimaria} from '../../Colors'
+import Titulo from 'componentes/Titulo';
+import Link from 'componentes/Link';
+import { corFundoSecundaria, corTextoPrimaria } from 'Colors'
 
 const Cabecalho = styled.header`
     background-color: ${corFundoSecundaria};
