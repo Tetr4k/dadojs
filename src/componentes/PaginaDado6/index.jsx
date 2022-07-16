@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+//import keyframes from 'styled-components';
 import Acoes from 'componentes/Acoes';
 import BotaoLimpar from 'componentes/BotaoLimpar';
 import BotaoTrocar from 'componentes/BotaoLimpar';
@@ -7,6 +8,21 @@ import Historico from 'componentes/Historico';
 import { useHistorico } from 'hooks/useHistorico';
 import { useLado } from 'hooks/useLado';
 import { useNumero } from 'hooks/useNumero';
+
+/*
+const move = keyframes`
+    from{
+        align-items: 'flex-start';
+    }
+    to{
+        align-items: 'flex-end';
+    }
+`
+
+const PaginaDado = styled.div`
+    //animation: ${move} 1s linear;
+    align-items: ${(props) => props.alinhamento ? 'flex-end': 'flex-start'};
+*/
 
 const PaginaDado = styled.div`
     align-items: ${(props) => props.alinhamento ? 'flex-end': 'flex-start'};
