@@ -6,12 +6,22 @@ const Historico = styled.ol`
     display: flex;
     overflow: scroll;
     width: 100%;
+
+    @media(min-width: 900px){
+		width: 30%;
+		postion: fixed;
+		right: 0;
+	}
 `
 
 const Gradiente = styled.div`
     margin-top: 1rem;
     height: 7rem;
-    position: fixed;
+    position: fixed;	
+    
+    @media(min-width: 900px){
+		display: none;
+	}
 `
 
 const GradienteEsquerdo = styled(Gradiente)`

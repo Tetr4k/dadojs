@@ -11,6 +11,17 @@ const Botao = styled.button`
     text-align: center;
     height: 5rem;
     width: 5rem;
+
+    @media(min-width: 900px){
+        border-radius: 2rem;
+        height: 5rem;
+        width: 90%;
+
+        &:hover{
+            background: ${corTextoPrimaria};
+            color: ${corBotaoPrimaria};
+        }
+    }
 `
 
 export default Botao;

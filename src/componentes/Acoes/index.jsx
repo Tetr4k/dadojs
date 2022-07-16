@@ -7,6 +7,13 @@ const Acoes = styled.div`
 	justify-content: space-between;
 	padding: 1rem;
 	width: 90%;
+
+	@media(min-width: 900px){
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 30%;
+		height: 100%;
+	}
 `
 
 export default Acoes;

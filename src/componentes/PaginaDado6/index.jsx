@@ -12,11 +12,19 @@ const PaginaDado = styled.div`
     align-items: ${(props) => props.alinhamento ? 'flex-end': 'flex-start'};
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
     position: fixed;
     bottom: 0;
     height: 75%;
     width: 100%;
+
+    @media(min-width: 900px){
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 0;
+        height: 85%;
+    }
 `
 
 const Retorno = () => {
