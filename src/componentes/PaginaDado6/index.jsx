@@ -20,9 +20,9 @@ const PaginaDado = styled.div`
 `
 
 const Retorno = () => {
-    const [numero, setNumero] = useNumero(6);
     const [historico, setHistorico] = useHistorico();
-    const [lado, trocaLado] = useLado(true);
+    const [lado, trocaLado] = useLado();
+    const [numero, setNumero] = useNumero(6);
 
     const geraNumero = (numero) => {
         const novoValor = Math.floor(Math.random()*6)+1;
